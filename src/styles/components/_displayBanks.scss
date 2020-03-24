@@ -1,0 +1,22 @@
+.bank-buttons-container {
+  background-color: $dark-blue;
+  border: solid 2px $light-blue;
+  height: $display-window-height;
+  margin: -1px 0;
+  text-shadow: 2px 2px $dark-gray;
+  width: $grid-width;
+}
+.bank-button {
+  background-color: $dark-blue;
+  border: none;
+  color: $highlight-blue;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  height: $display-window-height;
+  width: ($grid-width/2);
+}
+.bank-button-selected {
+  background-color: $highlight-blue;
+  color: $light-blue;
+}

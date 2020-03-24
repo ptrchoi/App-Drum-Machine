@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+button {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+h1 {
+  font-family: "Teko", "Verdana", sans-serif;
+  font-size: 5.5rem;
+  margin: 20px 0;
+}
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+}
