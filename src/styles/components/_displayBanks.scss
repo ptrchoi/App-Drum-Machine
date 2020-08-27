@@ -1,22 +1,35 @@
 .bank-buttons-container {
-  background-color: $dark-blue;
-  border: solid 2px $light-blue;
-  height: $display-window-height;
-  margin: -1px 0;
-  text-shadow: 2px 2px $dark-gray;
-  width: $grid-width;
+	background-color: $dark-blue;
+	border: solid 2px $light-blue;
+	display: flex;
+	flex-direction: row;
+	// justify-content: center;
+	margin: -1px 0;
+	text-shadow: 2px 2px $dark-gray;
+	// height: $display-window-height;
+	// width: $grid-width;
+	height: calc(((100vw * 1.7) / 5) / 2); // 0.5/5 of app height based on widht => ((w * 1.7) / 5) / 2)
+	width: 100%;
 }
 .bank-button {
-  background-color: $dark-blue;
-  border: none;
-  color: $highlight-blue;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  height: $display-window-height;
-  width: ($grid-width/2);
+	background-color: $dark-blue;
+	border: none;
+	color: $highlight-blue;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	// height: $display-window-height;
+	// width: ($grid-width/2);
+	height: 100%;
+	width: 50%;
 }
 .bank-button-selected {
-  background-color: $highlight-blue;
-  color: $light-blue;
+	background-color: $highlight-blue;
+	color: $light-blue;
+}
+// Need to prevent scaling at max-width
+@media screen and (min-width: 600px) {
+	.bank-buttons-container {
+		height: calc(((600px * 1.7) / 5) / 2); // 0.5/5 of app height based on widht => ((w * 1.7) / 5) / 2)
+	}
 }

@@ -204,18 +204,21 @@ class DrumMachine extends React.Component {
 	}
 	render() {
 		return (
-			<div className="bg-container">
-				<div id="drum-machine" className="grid">
-					<div className="grid-cell">
-						<h1>Good Beats</h1>
+			<div className="aspect-ratio-inner-container">
+				<div className="drum-machine-container">
+					<div className="display-block">
+						<div className="title-block">
+							<p>Good Beats</p>
+							{/* <h1>Good Beats</h1> */}
+						</div>
 					</div>
-					<div className="grid-cell">
+					<div className="display-block">
 						<DisplayBanks onBankChange={this.handleBankChange} selectedBank={this.state.selectedBank} />
 					</div>
-					<div className="grid-cell">
+					<div className="display-block drumpads-block">
 						<DrumPad soundBank={this.state.soundBank} onInput={this.handleInput} />
 					</div>
-					<div className="grid-cell">
+					<div className="display-block">
 						<DisplayMessage message={this.state.currentSound} />
 					</div>
 				</div>

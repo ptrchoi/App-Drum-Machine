@@ -1,60 +1,68 @@
-.buttons-container {
-  align-items: center;
-  background-color: $dark-gray;
-  border: 2px solid $light-blue;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  height: $grid-width;
-  justify-items: center;
-  width: $grid-width;
+.drumpads-container {
+	align-items: center;
+	background-color: $dark-gray;
+	// border: 2px solid $light-blue;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-items: center;
+	// height: $grid-width;
+	// width: $grid-width;
+	height: calc(((100vw * 1.7) / 5) * 3);
+	width: 100%;
 }
 .drum-pad {
-  border: 1px solid $highlight-blue;
-  background-image: radial-gradient(
-    $gradient-blue-start 5%,
-    $gradient-blue-end 95%
-  );
-  color: $highlight-blue;
-  cursor: pointer;
-  font-size: 1rem;
-  height: 140px;
-  width: 140px;
-  transition: ease-out 0.2s;
+	border: 1px solid $highlight-blue;
+	background-image: radial-gradient($gradient-blue-start 5%, $gradient-blue-end 95%);
+	color: $highlight-blue;
+	cursor: pointer;
+	font-size: 1rem;
+	// height: 140px;
+	height: 90%;
+	// width: 140px;
+	width: 90%;
+	transition: ease-out 0.2s;
 }
 .rainbow0 {
-  background-image: radial-gradient($gradient-start 5%, $red 95%);
+	background-image: radial-gradient($gradient-start 5%, $red 95%);
 }
 .rainbow1 {
-  background-image: radial-gradient($gradient-start 5%, $orange 95%);
+	background-image: radial-gradient($gradient-start 5%, $orange 95%);
 }
 .rainbow2 {
-  background-image: radial-gradient($gradient-start 5%, $yellow 95%);
+	background-image: radial-gradient($gradient-start 5%, $yellow 95%);
 }
 .rainbow3 {
-  background-image: radial-gradient($gradient-start 5%, $aqua 95%);
+	background-image: radial-gradient($gradient-start 5%, $aqua 95%);
 }
 .rainbow4 {
-  background-image: radial-gradient($gradient-start 5%, $chartreuse 95%);
+	background-image: radial-gradient($gradient-start 5%, $chartreuse 95%);
 }
 .rainbow5 {
-  background-image: radial-gradient($gradient-start 5%, $green 95%);
+	background-image: radial-gradient($gradient-start 5%, $green 95%);
 }
 .rainbow6 {
-  background-image: radial-gradient($gradient-start 5%, $blue 95%);
+	background-image: radial-gradient($gradient-start 5%, $blue 95%);
 }
 .rainbow7 {
-  background-image: radial-gradient($gradient-start 5%, $mauve 95%);
+	background-image: radial-gradient($gradient-start 5%, $mauve 95%);
 }
 .rainbow8 {
-  background-image: radial-gradient($gradient-start 5%, $purple 95%);
+	background-image: radial-gradient($gradient-start 5%, $purple 95%);
 }
 
 //Pulse animation cascaded after base styling
 .pulse {
-  background-image: none;
-  background-color: $highlight-blue;
-  color: #6ee1fa;
-  height: 138px;
-  width: 138px;
-  font-size: 3rem;
+	background-image: none;
+	background-color: $highlight-blue;
+	color: #6ee1fa;
+	height: 138px;
+	width: 138px;
+	font-size: 3rem;
+}
+
+// Need to prevent scaling at max-width
+@media screen and (min-width: 600px) {
+	.drumpads-container {
+		height: calc(((600px * 1.7) / 5) * 3); // 3/5 of app height based on width => ((w * 1.7 / 5) * 3)
+	}
 }

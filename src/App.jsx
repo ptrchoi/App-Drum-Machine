@@ -12,7 +12,7 @@ class App extends React.Component {
 	}
 	render() {
 		return (
-			<div className="app-wrapper">
+			<div className="app-aspect-ratio-container">
 				<DrumMachine />
 			</div>
 		);

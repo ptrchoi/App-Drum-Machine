@@ -24,5 +24,7 @@ $pink: rgb(237, 111, 186);
 
 //Layout:
 $display-font-size: 1.6rem;
-$display-window-height: 50px;
-$grid-width: 460px;
+// $display-window-height: 50px;
+// $grid-width: 460px;
+$display-window-height: calc(((100vw * 1.7) / 5) / 2);
+$grid-width: 100vw;
