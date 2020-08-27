@@ -1,12 +1,10 @@
 .drumpads-container {
 	align-items: center;
 	background-color: $dark-gray;
-	// border: 2px solid $light-blue;
+	border: 2px solid $light-blue;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	justify-items: center;
-	// height: $grid-width;
-	// width: $grid-width;
 	height: calc(((100vw * 1.7) / 5) * 3);
 	width: 100%;
 }
@@ -16,9 +14,7 @@
 	color: $highlight-blue;
 	cursor: pointer;
 	font-size: 1rem;
-	// height: 140px;
 	height: 90%;
-	// width: 140px;
 	width: 90%;
 	transition: ease-out 0.2s;
 }
@@ -54,10 +50,8 @@
 .pulse {
 	background-image: none;
 	background-color: $highlight-blue;
+	border: 1px solid #6ee1fa;
 	color: #6ee1fa;
-	height: 138px;
-	width: 138px;
-	font-size: 3rem;
 }
 
 // Need to prevent scaling at max-width
