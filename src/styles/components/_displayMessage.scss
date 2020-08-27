@@ -1,18 +1,17 @@
 .displayWindow {
+	align-items: center;
 	background-image: radial-gradient($gradient-blue-start 5%, $gradient-blue-end 95%);
 	border: solid 2px $light-blue;
 	color: $highlight-blue;
-	margin: -1px 0;
-	// height: $display-window-height;
-	// width: $grid-width;
+	display: flex;
 	height: calc(((100vw * 1.7) / 5) / 2); // 0.5/5 of app height based on widht => ((w * 1.7) / 5) / 2)
+	justify-content: center;
+	margin: -1px 0;
 	width: 100%;
 }
 .displayText {
-	font-size: $display-font-size;
-	margin: 12px;
+	font-size: 1.2rem;
 	opacity: 0;
-	text-align: center;
 	transition: opacity 1.5s; //time/speed to get to opacity: 0 (fade-out)
 }
 .fadeText {
@@ -23,5 +22,8 @@
 @media screen and (min-width: 600px) {
 	.displayWindow {
 		height: calc(((600px * 1.7) / 5) / 2); // 0.5/5 of app height based on widht => ((w * 1.7) / 5) / 2)
+	}
+	.displayText {
+		font-size: 1.8rem;
 	}
 }
