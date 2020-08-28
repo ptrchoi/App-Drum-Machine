@@ -1,7 +1,6 @@
 .displayWindow {
 	align-items: center;
 	background-image: radial-gradient($gradient-blue-start 5%, $gradient-blue-end 95%);
-	border: solid 2px $light-blue;
 	color: $highlight-blue;
 	display: flex;
 	height: calc(((100vw * 1.7) / 5) / 2); // 0.5/5 of app height based on widht => ((w * 1.7) / 5) / 2)

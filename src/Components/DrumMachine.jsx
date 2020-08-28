@@ -209,7 +209,6 @@ class DrumMachine extends React.Component {
 					<div className="display-block">
 						<div className="title-block">
 							<p>Good Beats</p>
-							{/* <h1>Good Beats</h1> */}
 						</div>
 					</div>
 					<div className="display-block">
