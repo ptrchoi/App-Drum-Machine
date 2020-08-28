@@ -2,8 +2,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 99%;
+	height: 99%;
 }
 .drum-machine-container {
 	background-color: $dark-gray;
@@ -13,7 +13,7 @@
 	justify-content: center;
 }
 .display-block {
-	border: 1px solid $light-blue;
+	border: 2px solid $light-blue;
 	width: 100%;
 }
 .title-block {
