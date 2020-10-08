@@ -1,34 +1,37 @@
 .aspect-ratio-inner-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 99%;
-	height: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
 }
 .drum-machine-container {
-	background-color: $dark-gray;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  background-color: $dark-gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .display-block {
-	border: 2px solid $light-blue;
-	width: 100%;
+  border: 2px solid $light-blue;
+  width: 100%;
 }
 .title-block {
-	align-items: center;
-	background-color: $dark-gray;
-	display: flex;
-	font-family: "Teko", "Verdana", sans-serif;
-	font-size: 4rem;
-	height: calc((100vw * 1.7) / 5); // 1/5 of app height based on widht => (w * 1.7) / 5
-	justify-content: center;
+  align-items: center;
+  background-color: $dark-gray;
+  display: flex;
+  font-size: 4rem;
+  height: calc(
+    (100vw * 1.7) / 5
+  ); // 1/5 of app height based on widht => (w * 1.7) / 5
+  justify-content: center;
 }
 // Need to prevent scaling at max-width
 @media screen and (min-width: 600px) {
-	.title-block {
-		font-size: 5rem;
-		height: calc((600px * 1.7) / 5); // 1/5 of app height based on widht => (w * 1.7) / 5
-	}
+  .title-block {
+    font-size: 5rem;
+    height: calc(
+      (600px * 1.7) / 5
+    ); // 1/5 of app height based on widht => (w * 1.7) / 5
+  }
 }

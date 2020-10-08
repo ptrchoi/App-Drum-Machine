@@ -1,29 +1,29 @@
 body {
-	background-color: black;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  background-color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body,
 button {
-	font-family: "Montserrat", "Arial", sans-serif;
+  font-family: 'Righteous', 'Arial', sans-serif;
 }
 .app-aspect-ratio-container {
-	// Main app: using aspect ratio padding-top "trick"
-	height: 0;
-	padding-top: 600px / 360px * 100%; // Aspect ratio (3:5)
-	position: relative;
+  // Main app: using aspect ratio padding-top "trick"
+  height: 0;
+  padding-top: 600px / 360px * 100%; // Aspect ratio (3:5)
+  position: relative;
 
-	// Center internal content
-	left: 50%;
-	transform: translateX(-50%);
+  // Center internal content
+  left: 50%;
+  transform: translateX(-50%);
 
-	// Max width for app
-	max-width: 600px;
+  // Max width for app
+  max-width: 600px;
 }
 // Need to prevent scaling at max-width
 @media screen and (min-width: 600px) {
-	.app-aspect-ratio-container {
-		height: 1200px; // 600 * 600 / 300
-	}
+  .app-aspect-ratio-container {
+    height: 1200px; // 600 * 600 / 300
+  }
 }
