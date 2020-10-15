@@ -7,7 +7,7 @@ class DrumPad extends React.Component {
 		this.handleKeyDown = this.handleKeyDown.bind(this);
 		this.handleClick = this.handleClick.bind(this);
 	}
-	componentWillMount() {
+	componentDidMount() {
 		document.addEventListener('keydown', this.handleKeyDown);
 	}
 	componentWillUnmount() {
@@ -37,7 +37,7 @@ class DrumPad extends React.Component {
 		let renderButtons = () => {
 			return soundBank.map((soundObj) => {
 				return (
-					<button id={soundObj.buttonId} className="drum-pad" onClick={this.handleClick}>
+					<button key={soundObj.buttonId} id={soundObj.buttonId} className="drum-pad" onClick={this.handleClick}  >
 						<audio id={soundObj.audioId} className="clip" src={soundObj.src} />
 						{soundObj.audioId}
 					</button>
